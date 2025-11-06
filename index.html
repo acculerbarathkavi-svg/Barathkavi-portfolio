@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="image/portfolio.png">
+    <!-- <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous"
+     /> -->
+     <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/contacts/contact-1/assets/css/contact-1.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+</head>
+<body>
+    <header >
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color:black;">
+    <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+        
+        <h4 class="m-0" style="color: rgba(0, 147, 147, 0.977);">BK</h4>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav text-center">
+          <li class="nav-item"><a class="nav-link text-white" href="">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#work">Works</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+</nav>
+</header>
+
+<!------hero------>
+    <section class="hero-section position-relative text-center text-white" id="home">
+  <!-- Background Image -->
+  <img 
+    src="image/dark-img.jpg" 
+    alt="Background" 
+    class="img-fluid w-100" 
+    style="height: 100vh; object-fit: cover; filter: brightness(50%);" 
+  />
+
+  <!-- Hero Text -->
+  <div class="hero-text container position-absolute top-50 start-50 translate-middle" >
+    <div class="hero-font " >
+      <h2 class="display-4 " >Hey!</h2>
+      <h2 class="display-4 ">This is barathkavi,</h2>
+      <h3 class="display-5 mb-4">a Frontend Developer</h3>
+    </div>
+
+    <!-- Social Icons -->
+    <div class="d-flex justify-content-center flex-wrap gap-3">
+      <a href="https://github.com/" target="_blank" class="mx-2">
+        <img src="image/instagram.png" alt="Instagram" class="img-fluid" style="width: 45px;" />
+      </a>
+      <a href="https://github.com/" target="_blank" class="mx-2">
+        <img src="image/github.png" alt="GitHub" class="img-fluid" style="width: 45px;" />
+      </a>
+      <a href="https://github.com/" target="_blank" class="mx-2">
+        <img src="image/linkedin.png" alt="LinkedIn" class="img-fluid" style="width: 45px;" />
+      </a>
+      <a href=" " class="mx-2">
+        <img src="image/gmail.png" alt="Gmail" class="img-fluid" style="width: 45px;" />
+      </a>
+    </div>
+    <a href="https://drive.google.com/file/d/16FhGaDgy08Y6MaZmf-LtjgHDmgcRIxol/view?usp=drivesdk" 
+   target="_blank" 
+   class="btn btn-outline-light mt-4 me-2">
+  My Resume
+</a>
+  </div>
+</section>
+
+    <!---About--->
+  <section class="py-5 position-relative bg-dark text-white" id="about">
+  <!-- Background Image -->
+  <div class="position-absolute top-0 start-0 w-100 h-100 about-bg"></div>
+
+  <div class="container position-relative">
+    <h2 class="display-5 text-center  mb-5 about-text" >About Me</h2>
+
+    <div class="row justify-content-center align-items-center g-4">
+      
+      <!-- Image -->
+      <div class="col-12 col-md-5 text-center">
+        <img src="image/IMG_7677.JPG" alt="Profile" class="img-fluid rounded shadow">
+      </div>
+
+      <!-- Text -->
+      <div class="col-12 col-md-7 text-center text-md-start">
+        <h2 class="display-6 about-text">I'm Barathkavi</h2>
+        <h5 class="mb-3 about-text">Passionate Web Developer</h5>
+
+        <p class="mb-0 about-text">
+          Electrical & Electronics Engineering Graduate | Frontend Developer Intern at 
+          <strong>Acculer Media</strong> | Pursuing Web Development.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!---skills-->
+
+<section class="skill-section text-white py-5 position-relative" id="skills">
+  <div class="skill-bg"></div>
+
+  <div class="container position-relative text-center">
+    <h2 class="display-5 mb-5">Skills</h2>
+
+    <div class="row justify-content-center g-4">
+
+      <!-- Row 1 -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="skill-box p-3">
+          <img src="image/react_icon.png" class="img-fluid mb-2" alt="">
+          <h6 class="text-white-50 m-0">React JS</h6>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="skill-box p-3">
+          <img src="image/js.png" class="img-fluid mb-2" alt="">
+          <h6 class="text-white-50 m-0">JavaScript</h6>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="skill-box p-3">
+          <img src="image/html.png" class="img-fluid mb-2" alt="">
+          <h6 class="text-white-50 m-0">HTML</h6>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="skill-box p-3">
+          <img src="image/css-3.png" class="img-fluid mb-2" alt="">
+          <h6 class="text-white-50 m-0">CSS</h6>
+        </div>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="skill-box p-3">
+          <img src="image/bootstrap-logo.png" class="img-fluid mb-2" alt="">
+          <h6 class="text-white-50 m-0">CSS</h6>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3 w-60">
+        <div class="skill-box p-3">
+          <img src="image/git.png" class="img-fluid mb-2 " alt="">
+          <h6 class="text-white-50 m-0">Git</h6>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="skill-box p-3 ">
+          <img src="image/github-sign.png" class="img-fluid mb-2" alt="">
+          <h6 class="text-white-50 m-0">GitHub</h6>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="skill-box p-3 ">
+          <img src="image/vs-code.png" class="img-fluid mb-2" alt="">
+          <h6 class="text-white-50 m-0">Visual Studio Code</h6>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!---Education-->
+<section class="py-5 bg-dark" id="education">
+  <div class="container">
+    <h2 class="text-center display-5 text-white mb-5">Education</h2>
+
+    <div class="timeline-bs">
+
+      <!-- Item -->
+      <div class="row g-4 align-items-center timeline-item">
+        <div class="col-md-6 text-md-end ">
+          <div class="p-4  rounded shadow" style="background-color: rgb(200, 199, 199);">
+            <h4>Bachelor's Degree</h4>
+            <small>2020 - 2023</small>
+            <p class="mb-0">Sri Krishna College of Engineering and Technology, Coimbatore<br>
+              B.E Electrical & Electronics</p>
+          </div>
+        </div>
+        <div class="col-md-6 d-flex justify-content-md-start justify-content-center">
+          <img src="image/collage.png" class="timeline-icon m-3" alt="">
+        </div>
+      </div>
+
+      <!-- Item -->
+      <div class="row g-4 align-items-center flex-md-row-reverse timeline-item">
+        <div class="col-md-6 text-md-start ">
+          <div class="p-4  rounded shadow" style="background-color: rgb(200, 199, 199);">
+            <h4>Diploma</h4>
+            <small>2017 - 2020</small>
+            <p class="mb-0">KSR Institute of Technology, Tiruchengode<br>
+              Diploma in EEE</p>
+          </div>
+        </div>
+        <div class="col-md-6 d-flex justify-content-md-end justify-content-center">
+          <img src="image/diploma.png" class="timeline-icon m-3" alt="">
+        </div>
+      </div>
+
+      <!-- Item -->
+      <div class="row g-4 align-items-center timeline-item">
+        <div class="col-md-6 text-md-end ">
+          <div class="p-4  rounded shadow" style="background-color: rgb(200, 199, 199);">
+            <h4>SSLC</h4>
+            <small>2016 - 2017</small>
+            <p class="mb-0">SSRM Higher Secondary School, Salem</p>
+          </div>
+        </div>
+        <div class="col-md-6 d-flex justify-content-md-start justify-content-center">
+          <img src="image/school.png" class="timeline-icon m-3" alt="">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!---Project-->
+<section class="py-5 project-bg" id="work">
+  <h4 class="text-center display-5 text-white-50 pb-4">My Works</h4>
+
+  <div class="container">
+    <div class="row g-4 justify-content-center">
+
+      <!-- Project 1 -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+        <div class="project-box p-3 text-center mb-3">
+          <img src="image/curd-img.png" class="img-fluid mb-2 rounded" alt="">
+          <h6 class="text-white-50 mt-3">CURD</h6>
+          <div class="d-gird justify-content-center gap-2 mt-3">
+            <a class="btn btn-info btn-sm" href="https://acculerbarathkavi-svg.github.io/Curd-tasks-react/" target="_blank">Live view</a>
+            <a class="btn btn-primary btn-sm" href="https://github.com/acculerbarathkavi-svg/Curd-tasks-react" target="_blank">Github code</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+        <div class="project-box p-3 text-center ">
+          <img src="image/landingpage-img.png" class="img-fluid mb-2 rounded" alt="">
+          <h6 class="text-white-50 mt-3">Landing Page</h6>
+          <div class="d-gird justify-content-center gap-2 mt-3">
+            <a class="btn btn-info btn-sm" href="#" target="_blank">Live view</a>
+            <a class="btn btn-primary btn-sm" href="#" target="_blank">Github code</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!--contact me-->
+
+<section class="bg-dark py-3 py-md-5" id="contact">
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+        <h2 class="mb-4 display-5 text-center text-white">Contact</h2>
+        <p class="text-secondary mb-2 text-center">Feel free to message me anytime, I'm here!</p>
+        <!-- <img src="image/contact-img.jpeg" alt="" class="img-fluid"> -->
+        <hr class="w-60 mx-auto mb-5 mb-xl-9 border-dark-subtle">
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row justify-content-lg-center">
+      <div class="col-12 col-lg-9">
+        <div class="bg-white border rounded shadow-sm overflow-hidden">
+          <form action="#!">
+            <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
+              <div class="col-12">
+                <label for="fullname" class="form-label">Full Name <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="fullname" name="fullname" value="" required>
+              </div>
+              <div class="col-12 col-md-6">
+                <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+                <div class="input-group">
+                  <span class="input-group-text">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                      <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                    </svg>
+                  </span>
+                  <input type="email" class="form-control" id="email" name="email" value="" required>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <label for="phone" class="form-label">Phone Number</label>
+                <div class="input-group">
+                  <span class="input-group-text">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                      <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                    </svg>
+                  </span>
+                  <input type="tel" class="form-control" id="phone" name="phone" value="">
+                </div>
+              </div>
+              <div class="col-12">
+                <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
+                <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+              </div>
+              <div class="col-12">
+                <div class="d-grid">
+                  <button class="btn btn-primary btn-lg" type="submit">Submit</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <footer class="bg-dark text-white pt-2 pb-3">
+  <div class="container text-center">
+
+    <!-- Social Icons -->
+    <div class="mb-4">
+      <a href="https://github.com/" target="_blank" class="btn btn-light btn-lg rounded-3 mx-1">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="https://github.com/" target="_blank" class="btn btn-light btn-lg rounded-3 mx-1">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a href="https://github.com/" target="_blank" class="btn btn-light btn-lg rounded-3 mx-1">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+    </div>
+
+    <!-- Footer Nav -->
+    <ul class="nav justify-content-center flex-wrap mb-3">
+      <li class="nav-item"><a href="#home" class="nav-link px-2 text-white-50">Home</a></li>
+      <li class="nav-item"><a href="#about" class="nav-link px-2 text-white-50">About</a></li>
+      <li class="nav-item"><a href="#skills" class="nav-link px-2 text-white-50">Skills</a></li>
+      <li class="nav-item"><a href="#education" class="nav-link px-2 text-white-50">Education</a></li>
+      <li class="nav-item"><a href="#work" class="nav-link px-2 text-white-50">Works</a></li>
+      <li class="nav-item"><a href="#contact" class="nav-link px-2 text-white-50">Contact</a></li>
+    </ul>
+
+    <!-- Bottom Text -->
+    <p class="text-center text-white-50 mb-0">
+      © 2025 bk, Inc. All rights reserved.
+    </p>
+
+  </div>
+</footer>
+<!---js-->
+<script>
+  AOS.init({
+            offset: 300,
+            duration: 1400,
+        });
+</script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+</body>
+</html>
