@@ -56,8 +56,8 @@
   />
 
   <!-- Hero Text -->
-  <div class="hero-text container position-absolute top-50 start-50 translate-middle" >
-    <div class="hero-font " >
+  <div class="hero-text container position-absolute top-50 start-50 translate-middle " >
+    <div class="hero-font " data-aos="fade-up">
       <h2 class="display-4 " >Hey!</h2>
       <h2 class="display-4 ">This is barathkavi,</h2>
       <h3 class="display-5 mb-4">a Frontend Developer</h3>
@@ -97,12 +97,12 @@
     <div class="row justify-content-center align-items-center g-4">
       
       <!-- Image -->
-      <div class="col-12 col-md-5 text-center">
+      <div class="col-12 col-md-5 text-center" data-aos="fade-right">
         <img src="image/IMG_7677.JPG" alt="Profile" class="img-fluid rounded shadow">
       </div>
 
       <!-- Text -->
-      <div class="col-12 col-md-7 text-center text-md-start">
+      <div class="col-12 col-md-7 text-center text-md-start" data-aos="fade-right">
         <h2 class="display-6 about-text">I'm Barathkavi</h2>
         <h5 class="mb-3 about-text">Passionate Web Developer</h5>
 
@@ -119,12 +119,12 @@
 <!---skills-->
 
 <section class="skill-section text-white py-5 position-relative" id="skills">
-  <div class="skill-bg"></div>
+  <div class="skill-bg" ></div>
 
   <div class="container position-relative text-center">
     <h2 class="display-5 mb-5">Skills</h2>
 
-    <div class="row justify-content-center g-4">
+    <div class="row justify-content-center g-4" data-aos="zoom-out-down">
 
       <!-- Row 1 -->
       <div class="col-6 col-md-4 col-lg-3">
@@ -195,7 +195,7 @@
     <div class="timeline-bs">
 
       <!-- Item -->
-      <div class="row g-4 align-items-center timeline-item">
+      <div class="row g-4 align-items-center timeline-item" data-aos="fade-right">
         <div class="col-md-6 text-md-end ">
           <div class="p-4  rounded shadow" style="background-color: rgb(200, 199, 199);">
             <h4>Bachelor's Degree</h4>
@@ -210,7 +210,7 @@
       </div>
 
       <!-- Item -->
-      <div class="row g-4 align-items-center flex-md-row-reverse timeline-item">
+      <div class="row g-4 align-items-center flex-md-row-reverse timeline-item" data-aos="fade-left">
         <div class="col-md-6 text-md-start ">
           <div class="p-4  rounded shadow" style="background-color: rgb(200, 199, 199);">
             <h4>Diploma</h4>
@@ -225,7 +225,7 @@
       </div>
 
       <!-- Item -->
-      <div class="row g-4 align-items-center timeline-item">
+      <div class="row g-4 align-items-center timeline-item" data-aos="fade-right" >
         <div class="col-md-6 text-md-end ">
           <div class="p-4  rounded shadow" style="background-color: rgb(200, 199, 199);">
             <h4>SSLC</h4>
@@ -250,7 +250,7 @@
     <div class="row g-4 justify-content-center">
 
       <!-- Project 1 -->
-      <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-4" data-aos="fade-right">
         <div class="project-box p-3 text-center mb-3">
           <img src="image/curd-img.png" class="img-fluid mb-2 rounded" alt="">
           <h6 class="text-white-50 mt-3">CURD</h6>
@@ -262,7 +262,7 @@
       </div>
 
       <!-- Project 2 -->
-      <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-4" data-aos="fade-left">
         <div class="project-box p-3 text-center ">
           <img src="image/landingpage-img.png" class="img-fluid mb-2 rounded" alt="">
           <h6 class="text-white-50 mt-3">Landing Page</h6>
@@ -373,6 +373,7 @@
 
   </div>
 </footer>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <!---js-->
 <script>
   AOS.init({
@@ -381,6 +382,5 @@
         });
 </script>
 
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </body>
 </html>
