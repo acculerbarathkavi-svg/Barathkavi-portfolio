@@ -1,27 +1,28 @@
 const express = require("express");
 const cors = require("cors");
+const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
 
 const app = express();
 app.use(cors());
-app.use(express.json());
+app.use(bodyParser.json());
 
-// Email setup
-let transporter = nodemailer.createTransport({
+// 🔹 STEP 3 — Create transporter (VERY IMPORTANT)
+const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-        user: "barathkavi22@gmail.com",      // your gmail
-        pass: "pbnr dfwa pqxu uogk"         // special password
+        user: "barathkavi001@gmail.com",       // your Gmail
+        pass: "pbnr dfwa pqxu uogk"     // 16-char App Password
     }
 });
 
-// API
+// 🔹 API — receives contact form message
 app.post("/contact", async (req, res) => {
     const { fullname, email, phone, message } = req.body;
 
     const mailOptions = {
         from: email,
-        to: "barathkavi22@gmail.com",
+        to: "yourgmail@gmail.com",      // your Gmail again
         subject: "New Contact Message",
         text: `
 Name: ${fullname}
@@ -43,4 +44,6 @@ ${message}
 });
 
 // Start server
-app.listen(5000, () => console.log("Server running on http://localhost:5000"));
+app.listen(5000, () => {
+    console.log("Server running on port 5000");
+});
