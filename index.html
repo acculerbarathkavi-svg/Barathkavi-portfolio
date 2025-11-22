@@ -57,7 +57,7 @@
 
   <!-- Hero Text -->
   <div class="hero-text container position-absolute top-50 start-50 translate-middle " >
-    <div class="hero-font " data-aos="fade-up">
+    <div class="hero-font " >
       <h2 class="display-4 " >Hey!</h2>
       <h2 class="display-4 ">This is barathkavi,</h2>
       <h3 class="display-5 mb-4">a Frontend Developer</h3>
@@ -97,12 +97,12 @@
     <div class="row justify-content-center align-items-center g-4">
       
       <!-- Image -->
-      <div class="col-12 col-md-5 text-center" data-aos="fade-right">
+      <div class="col-12 col-md-5 text-center" >
         <img src="image/IMG_7677.JPG" alt="Profile" class="img-fluid rounded shadow">
       </div>
 
       <!-- Text -->
-      <div class="col-12 col-md-7 text-center text-md-start" data-aos="fade-right">
+      <div class="col-12 col-md-7 text-center text-md-start" >
         <h2 class="display-6 about-text">I'm Barathkavi</h2>
         <h5 class="mb-3 about-text">Passionate Web Developer</h5>
 
@@ -279,7 +279,7 @@
 
 <!--contact me-->
 
-<section class="bg-dark py-3 py-md-5" id="contact">
+<section class="bg-dark py-3 py-md-5" id="contactForm">
   <div class="container">
     <div class="row justify-content-md-center">
       <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
@@ -373,14 +373,42 @@
 
   </div>
 </footer>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<!---js-->
+
+
+
 <script>
-  AOS.init({
-            offset: 300,
-            duration: 1400,
-        });
+document.getElementById("contactForm").addEventListener("submit", async function(e){
+  e.preventDefault();
+
+  const data = {
+    fullname: document.getElementById("fullname").value,
+    email: document.getElementById("email").value,
+    phone: document.getElementById("phone").value,
+    message: document.getElementById("message").value
+  };
+
+  try {
+    const response = await fetch("http://localhost:5000/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data)
+    });
+
+    const result = await response.json();
+    if (result.success) {
+      alert("Message sent! Thank you.");
+      // Optional: reset form
+      document.getElementById("contactForm").reset();
+    } else {
+      alert("Error: " + result.msg);
+    }
+  } catch (err) {
+    console.error(err);
+    alert("Could not send message. Check the backend is running.");
+  }
+});
 </script>
+
 
 </body>
 </html>
