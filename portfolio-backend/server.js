@@ -22,7 +22,7 @@ app.post("/contact", async (req, res) => {
 
     const mailOptions = {
         from: email,
-        to: "yourgmail@gmail.com",      // your Gmail again
+        to: "barathkavi001@gmail.com",      // your Gmail again
         subject: "New Contact Message",
         text: `
 Name: ${fullname}
