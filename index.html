@@ -294,7 +294,7 @@
     <div class="row justify-content-lg-center">
       <div class="col-12 col-lg-9">
         <div class="bg-white border rounded shadow-sm overflow-hidden">
-          <form action="#!">
+          <form action="contactForm">
             <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
               <div class="col-12">
                 <label for="fullname" class="form-label">Full Name <span class="text-danger">*</span></label>
@@ -406,6 +406,37 @@ document.getElementById("contactForm").addEventListener("submit", async function
     console.error(err);
     alert("Could not send message. Check the backend is running.");
   }
+
+  document.getElementById("contactForm").addEventListener("submit", async function(e){
+  e.preventDefault();
+
+  const data = {
+    fullname: document.getElementById("fullname").value,
+    email: document.getElementById("email").value,
+    phone: document.getElementById("phone").value,
+    message: document.getElementById("message").value
+  };
+
+  try {
+    const response = await fetch("http://localhost:5000/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data)
+    });
+
+    const result = await response.json();
+    if (result.success) {
+      alert("Message sent! Thank you.");
+      document.getElementById("contactForm").reset();
+    } else {
+      alert("Error: " + result.msg);
+    }
+  } catch (err) {
+    console.error(err);
+    alert("Could not send message. Check the backend is running.");
+  }
+});
+
 });
 </script>
 
